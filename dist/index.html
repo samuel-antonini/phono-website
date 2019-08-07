@@ -14,15 +14,19 @@
 
 <body id="home">
 
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Phono</h1>
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header id="header">
+        <nav class="navbar" id="nav-bar">
+            <div class="container">
+                <img src="#" alt="Phono" class="logo" id="header-img">
+                <!-- <h1 class="logo" id>Phono</h1> -->
+                <ul class="nav">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#footer" class="nav-link">Subscribe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Showcase -->
     <section class="section-a">
@@ -39,13 +43,16 @@
 
     <!-- Overlay Text -->
 
-    <section class="section-b">
+    <section class="section-b" id="about">
         <div class="overlay">
             <div class="section-b-inner">
                 <h3>Loud & clear</h3>
                 <h2>People Aren't Hearing All The Music</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea, blanditiis reiciendis iste quod
                     quaerat voluptate id rerum consequuntur itaque.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HLdEdFNy8Q8?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen id="video"></iframe>
             </div>
         </div>
     </section>
@@ -65,7 +72,7 @@
 
     <!-- Footer -->
 
-    <footer class="section-footer">
+    <footer class="section-footer" id="footer">
         <div class="container">
             <div>
                 <h2>Lorem ipsum dolor sit</h2>
@@ -100,7 +107,8 @@
             <div>
                 <h3>Subscribe</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <form name="email-form" method="POST" data-netlify="true">
+                <form action="https://www.freecodecamp.com/email-submit" name="email-form" method="POST"
+                    data-netlify="false" id="form">
                     <div class="email-form">
                         <span class="form-control-wrap">
                             <input type="email" name="email" id="email" size="40" class="form-control"
@@ -109,12 +117,14 @@
                         <button type="submit" value="submit" class="form-control submit">
                             <i class="fas fa-chevron-right"></i>
                         </button>
+                        <input type="submit" value="" id="submit">
                     </div>
                 </form>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="static/js/simple-lightbox.js"></script>
