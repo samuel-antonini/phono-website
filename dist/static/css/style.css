@@ -109,8 +109,7 @@ img {
     height: 800px;
 }
 
-.section-b p,
-.section-b iframe {
+.section-b p {
     margin: 1rem 0;
 }
 
@@ -264,6 +263,24 @@ img {
     height: 100%;
     width: 100%;
     background-color: var(--overlay-color);
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Media Query */
